@@ -26,22 +26,22 @@
     </style>
 </head>
 <body>
-    <nav class="navbar" style=" background: darkslategrey; box-shadow: 0 2px 2px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);  margin-bottom: 2%;">
+    <nav class="" style=" background: darkslategrey; box-shadow: 0 2px 2px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);  ">
     
-       <a href="/myblog"> <img style="  width: 25%;"  src="https://media-exp1.licdn.com/dms/image/C5116AQHYH8Xn4A5Pyg/profile-displaybackgroundimage-shrink_200_800/0?e=1593043200&v=beta&t=u_vaDZ1r-FSzMaAex12jboVcSwVp2QbHLPblK0VOpa0 " alt="">
+       <a href="/myblog"> <img style="  width: 10%;"  src="https://media-exp1.licdn.com/dms/image/C5116AQHYH8Xn4A5Pyg/profile-displaybackgroundimage-shrink_200_800/0?e=1593043200&v=beta&t=u_vaDZ1r-FSzMaAex12jboVcSwVp2QbHLPblK0VOpa0 " alt="">
        </a>
       
-     
-        <a class="navbar-brand" href="#blog"   style="margin-left: 1%; float: right;"><p style="color: white; font-size:120%; "> Posts</p></a>
-        <a class="navbar-brand" href="/myblog/about"  style="margin-left: 3%; float: right;"><p style="color:white; font-size:120%;"> About</p></a>
-        <a class="navbar-brand" href="/myblog/#contact"   style="margin-left: 3%; float: right;"><p style="color: white; font-size:120%; "> Contact</p></a>
+       <a class="" href="#contact" onclick="display()"  style="margin-left: 3%;  float: right; margin-right: 2%; margin-top: 0.5%;"><p style="color: white; font-size:120%; "> Contact</p></a>
+        <a class="" href="/myblog/#blog"   style="margin-left: 3%; float: right; margin-top: 0.5%;"><p style="color: white; font-size:120%;"> Posts</p></a>
+        <a class="" href="/myblog/about"  style="margin-left: 3%; float: right; margin-top: 0.5%;"><p style="color:white; font-size:120%;  "> About</p></a>
+       
     </nav>
     {{content}}
 
 
-<div class="contact" id="contact" style="margin-top:10% ; bottom: 0%;  background: darkslategrey;">
+<div class="contact" id="contact" style="margin-top:5% ; bottom: 0%;  background-color: darkslategrey;">
     <!-- Footer -->
-<footer class="page-footer " style=" background: darkslategrey">
+<footer class="page-footer" style=" color: white">
 
 <!-- Footer Links -->
 <div class="container-fluid text-center text-md-left" style="padding: 1%;">
@@ -161,7 +161,12 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script></script>
+<script>
+   document.getElementById('contact').style.display='none';
+  function display(){
+    document.getElementById('contact').style.display='block';
+  }
+</script>
 
 <!-- JQuery -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
